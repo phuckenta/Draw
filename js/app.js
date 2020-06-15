@@ -2,6 +2,9 @@ import Paint from "./paint.class.js";
 import Tool from "./tool.class.js";
 
 let paint = new Paint("canvas");
+var canva = document.getElementById("canvas");
+
+const context = canva.getContext("2d");
 
 // Set defaults
 paint.activeTool = Tool.TOOL_LINE;
@@ -27,6 +30,8 @@ document.querySelectorAll("[data-command]").forEach((el) => {
       link.download = "my-image.png";
       link.href = image;
       link.click();
+    } else if (command == "new") {
+      context.clearRect(0, 0, canva.width, canva.height);
     }
   });
 });
