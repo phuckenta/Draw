@@ -103,6 +103,7 @@ body {
 h1 {
   font-family: "Gloria Hallelujah", cursive;
   font-size: 5rem;
+  color: whitesmoke;
 }
 
 .h5mini {
@@ -202,4 +203,9 @@ h1 {
 
 .button_3d:hover a::after {
   background: #e66a5a;
+}
+
+body {
+  background: url(images/bg-masthead.jpg);
+  background-size: cover;
 }
