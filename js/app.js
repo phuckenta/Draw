@@ -32,6 +32,7 @@ document.querySelectorAll("[data-command]").forEach((el) => {
       link.click();
     } else if (command == "new") {
       context.clearRect(0, 0, canva.width, canva.height);
+      paint.undoStack = [];
     }
   });
 });
